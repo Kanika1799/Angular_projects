@@ -1,0 +1,8 @@
+<ul class="expenses">
+    <li *ngFor="let expense of expenses">
+      <span >{{expense.price}}</span>{{expense.activity}}
+      <span> <button class="btn btn-primary">Edit</button></span>
+      <span><button class="delete btn btn-danger" title="delete expense"
+        (click)="delete(expense)">Remove</button></span>
+    </li>
+  </ul>
